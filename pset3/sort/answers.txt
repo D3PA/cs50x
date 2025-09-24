@@ -1,0 +1,29 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Because it slows down quadratically on random data but runs extremely fast when the list is already sorted, which matches bubble sort with early exit
+
+sort2 uses: Merge sort
+
+How do you know?: Because its performance scales likes n log n and it shows almost identical times whether the list is sorted or random, which is characteristic of merge sort
+
+sort3 uses: Selection sort
+
+How do you know?: Because its performance scales quadratically and it doesnt get any faster on already sorted data, which is exactly what selection sort does
+
+sort1
+random10000 - 0.218s
+random50000 - 6.279s
+sorted10000 - 0.040s
+sorted50000 - 1.159s
+
+sort2
+random10000 - 0.041s
+random50000 - 1.048s
+sorted10000 - 0.056s
+sorted50000 - 1.040s
+
+sort3
+random10000 - 0.175s
+random50000 - 2.992s
+sorted10000 - 0.108s
+sorted50000 - 3.036s
